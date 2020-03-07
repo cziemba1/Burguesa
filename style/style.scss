@@ -1,0 +1,134 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, big, em, img, s, small, strike, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+list-style-type: none;
+text-decoration: none;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+font-family: 'Playfair Display', serif;
+--bg-color: #ffd800;
+}
+
+header{
+    overflow-y: hidden;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    align-items: center;
+    position: relative;
+
+    ul{
+        justify-self: end;
+        display: flex;
+        justify-content: space-evenly;
+
+        li{
+            margin-left: 1.7rem;
+            text-transform: uppercase;
+
+            a{
+                color: black;
+                font-weight: 600;
+                opacity: 1;
+                transition: all .1s ease-in;
+
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}
+
+#logo{
+    grid-column: 2/3;
+    font-size: 2rem;
+}
+
+section{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 -120px;
+    }
+
+    .headline{
+        position: absolute;
+        top:40%;
+        left:75%;
+        font-size: 4rem;
+        transform: translate(-20%, -70%);
+        color: white;
+        z-index: 3;
+    }
+
+    .headline2{
+        position: absolute;
+        left: 78%;
+        top: 48%;
+        font-size: 4rem;
+        transform: translate(-20%, -70%);
+        color: white;
+        z-index: 3;
+    }
+
+    p{
+        position: absolute;
+        left: 81%;
+        top: 30%;
+        transform: translate(-20%, -70%);
+        opacity: .5;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .descubrir{
+        position: absolute;
+        left: 81%;
+        top: 60%;
+        transform: translate(-20%, -70%);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 600;
+        transition: all .5s ease-in;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 2.9rem;
+            left: -2rem;
+            background-color: white;
+            transition: all .5s ease-in;
+        }
+
+        &:hover{
+            left: 82%;
+        }
+
+        &:hover::after{
+            left: 2rem;
+        }
+
+    }
+}

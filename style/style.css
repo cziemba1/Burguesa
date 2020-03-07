@@ -1,0 +1,159 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, big, em, img, s, small, strike, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  --bg-color: #ffd800;
+}
+
+header {
+  overflow-y: hidden;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 1fr 10%;
+      grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+nav ul {
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li {
+  margin-left: 1.7rem;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 600;
+  opacity: 1;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+nav ul li a:hover {
+  opacity: .5;
+}
+
+#logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 2rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -120px;
+     object-position: 0 -120px;
+}
+
+.hero .headline {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  font-size: 4rem;
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+}
+
+.hero .headline2 {
+  position: absolute;
+  left: 78%;
+  top: 48%;
+  font-size: 4rem;
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+}
+
+.hero p {
+  position: absolute;
+  left: 81%;
+  top: 30%;
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
+  opacity: .5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.hero .descubrir {
+  position: absolute;
+  left: 81%;
+  top: 60%;
+  -webkit-transform: translate(-20%, -70%);
+          transform: translate(-20%, -70%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.hero .descubrir::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 2.9rem;
+  left: -2rem;
+  background-color: white;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.hero .descubrir:hover {
+  left: 82%;
+}
+
+.hero .descubrir:hover::after {
+  left: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
