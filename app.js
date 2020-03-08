@@ -1,19 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-
-        var currentScrollpos = window.pageYOffset;
-
-        if (currentScrollpos > prevScrollpos) {
-            document.getElementById("nav").style.top = "-100px";
-        } else {
-            document.getElementById("nav").style.top = "0";
-        }
-
-        prevScrollpos = currentScrollpos;
-
-    }
 
     const tl = new TimelineMax();
 
@@ -113,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
         triggerElement: ".photo-vertical",
         duration: "100%",
         triggerHook: 1,
-        offset: "100"
     })
         .setTween(tl2)
         .addIndicators()
@@ -139,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const tl4 = new TimelineMax();
-    tl4.fromTo(".section-3-wrapper", 1, {
+    tl4.fromTo(".section-3-wrapper", 2.5, {
         height: 0
     }, {
         height: "20%"
@@ -165,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let scene4 = new ScrollMagic.Scene({
         triggerElement: "blockquote",
         triggerHook: 1,
-        offset: "-200"
+        offset: "-100"
     })
         .setTween(tl5)
         .addIndicators()
