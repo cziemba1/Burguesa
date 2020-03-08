@@ -584,4 +584,91 @@ section {
   padding: 0 10%;
   opacity: .5;
 }
+
+.nav-links {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links .wrapper {
+  width: 35%;
+  height: 48%;
+  position: relative;
+  background-color: white;
+  -webkit-transform: translate(7rem);
+          transform: translate(7rem);
+  z-index: 10;
+}
+
+.nav-links .wrapper .heading h3 {
+  font-size: .8rem;
+  opacity: .5;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.nav-links .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 70%;
+}
+
+.nav-links .wrapper ul li i {
+  margin-right: .5rem;
+}
+
+.nav-links .wrapper ul li a {
+  color: black;
+  font-size: 2rem;
+  position: relative;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.nav-links .wrapper ul li a:hover {
+  left: .5rem;
+}
+
+.nav-links .content .imgs .img_back img {
+  width: 80%;
+  position: relative;
+}
+
+.nav-links .content .text {
+  position: absolute;
+  -webkit-transform: translate(40rem, -28rem);
+          transform: translate(40rem, -28rem);
+  background-color: white;
+  width: 20%;
+  height: 48%;
+  padding: .8rem;
+}
+
+.nav-links .content .text h4 {
+  font-size: 3rem;
+}
+
+.nav-links .content .text .verano-text {
+  position: relative;
+  left: 4rem;
+}
+
+.nav-links .content .text p {
+  font-size: .9rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
 /*# sourceMappingURL=style.css.map */
