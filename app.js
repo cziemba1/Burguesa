@@ -74,7 +74,65 @@ document.addEventListener("DOMContentLoaded", () => {
             {
                 opacity: 1,
                 ease: Power2.easeInOut
-            }, "-=2.2");
+            }, "-=2.2")
+        .fromTo(".img-sp-sm", 1.2,
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=2")
+        .fromTo(".heading", 1,
+            {
+                x: 60,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=2.5")
+        .fromTo(".colections-title", 1,
+            {
+                opacity: 0
+            },
+            {
+                opacity: .5,
+                ease: Power2.easeInOut
+            }, "-=2")
+        .fromTo(".nosotros-info", 1.5,
+            {
+                height: "0%"
+            },
+            {
+                height: "100%",
+                ease: Power2.easeInOut
+            }, "-=3.4")
+        .fromTo(".heading-title", 1.5,
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=2")
+        .fromTo(".heading-text1", 1.5,
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=1.5")
+        .fromTo(".heading-text2", 1.5,
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=1.2")
 
     const controller = new ScrollMagic.Controller();
 
@@ -176,6 +234,126 @@ document.addEventListener("DOMContentLoaded", () => {
         .setTween(tl6)
         .addIndicators()
         .addTo(controller);
+
+    const tl7 = new TimelineMax();
+    tl7.fromTo(".glide", 2, {
+        y: 30
+    }, {
+        y: 0
+    })
+
+    let scene6 = new ScrollMagic.Scene({
+        triggerElement: ".section-colecciones-1",
+        triggerHook: 1,
+        offset: "100"
+    })
+        .setTween(tl7)
+        .addIndicators()
+        .addTo(controller);
+
+    const tl8 = new TimelineMax();
+    tl8.fromTo(".colecciones-img", 2, {
+        y: 30
+    }, {
+        y: 0
+    })
+        .fromTo(".collecion-about-title", 2, {
+            y: 30
+        }, {
+            y: 0
+        }, "-=1")
+        .fromTo(".collecion-about-desc", 2, {
+            y: 30
+        }, {
+            y: 0
+        }, "-=1.5")
+
+    let scene7 = new ScrollMagic.Scene({
+        triggerElement: ".section-colecciones-2",
+        triggerHook: 1,
+        offset: "-100"
+    })
+        .setTween(tl8)
+        .addIndicators()
+        .addTo(controller);
+
+    const tl9 = new TimelineMax();
+    tl9.fromTo(".full-collection-title", 1, {
+        y: 50
+    }, {
+        y: 0
+    })
+        .fromTo(".full-collection-wrapper", 1, {
+            y: 50
+        }, {
+            y: 0
+        }, "-=.5")
+
+    let scene8 = new ScrollMagic.Scene({
+        triggerElement: ".section-colecciones-3",
+        triggerHook: 1,
+    })
+        .setTween(tl9)
+        .addIndicators()
+        .addTo(controller);
+
+    const tl10 = new TimelineMax();
+    tl10.fromTo(".heading-2", 1, {
+        x: 50,
+        opacity: 0
+    }, {
+        x: 0,
+        opacity: 1
+    })
+        .fromTo(".content-3", 1, {
+            x: -50,
+            opacity: 0
+        }, {
+            x: 0,
+            opacity: 1
+        })
+
+    let scene9 = new ScrollMagic.Scene({
+        triggerElement: ".section-nosotros-1",
+        triggerHook: 1,
+        offset: "10"
+    })
+        .setTween(tl10)
+        .addIndicators()
+        .addTo(controller);
+
+    const tl11 = new TimelineMax();
+    tl11.fromTo(".sewing-1", 1.5, {
+        y: 100,
+        opacity: 0
+    }, {
+        y: 0,
+        opacity: 1
+    })
+        .fromTo(".sewing-2", 1.5, {
+            y: 100,
+            opacity: 0
+        }, {
+            y: 0,
+            opacity: 1
+        })
+
+    let scene10 = new ScrollMagic.Scene({
+        triggerElement: ".section-nosotros-2",
+        triggerHook: 1,
+        offset: "100"
+    })
+        .setTween(tl11)
+        .addIndicators()
+        .addTo(controller);
+
+
+
+
 })
+
+
+
+
 
 

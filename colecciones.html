@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/JS/glide.core.min.css">
+    <link rel="stylesheet" href="assets/JS/glide.theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/33e7d1d044.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/style.css">
@@ -11,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-colections">
         <nav id="nav">
             <h3 id="logo">Burguesa</h3>
             <ul>
@@ -26,34 +28,261 @@
         <div class="nav-links">
             <div class="wrapper">
                 <div class="heading">
-                    <h3>Colecciones</h3>
-                </div>
-                <ul>
-                    <li><a href=""><i class="fas fa-caret-right"></i>Primavera - Verano - 2020</a></li>
-                    <li><a href=""><i class="fas fa-caret-right"></i>Otoño - Invierno - 2020</a></li>
-                    <li><a href=""><i class="fas fa-caret-right"></i>Temporadas anteriores</a></li>
-                </ul>
-            </div>
-            <div class="content">
-                <div class="imgs">
-                    <div class="img_back">
-                        <img src="assets/imgs/collections/melody-jacob-ZS1Fhnq1wnk-unsplash.jpg" alt="">
-                    </div>
-                </div>
-                <div class="text">
-                    <h4>Primavera</h4>
+                    <h3 class="colections-title">Colecciones</h3>
+                    <h4 class="primavera_text">Primavera</h4>
                     <h4 class="verano-text">Verano</h4>
-                    <p>
+                    <p class="temporada-text">
                         Esta temporada, la colección primavera verano 20 explora la idea de ser uno mismo, lejos de las
                         reglas que se nos
                         imponen y evoluciona en torno a dos ejes principales: un deseo de tranquilidad pero también un
                         deseo de celebrar la
                         vida.</p>
                 </div>
+                <div class="content">
+                    <img class="img-sp-sm" src="assets/imgs/collections/melody-jacob-ZS1Fhnq1wnk-unsplash.jpg"
+                        alt="Vestido Amarillo, coleccion Primavera Verano 2020">
+                </div>
             </div>
-        </div>
 
     </header>
+
+    <section class="section-colecciones-1">
+        <div class="images glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/1.jpg" alt="Vestido Rojo Ligero">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/2.jpg" alt="Vestido Rojo Ligero">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/3.jpg" alt="Pollera Negra Flecos">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/4.jpg" alt="Pollera Negra Flecos">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/5.jpg" alt="Vestido Rojo Largo">
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/6.jpg" alt="Vestido Rojo Largo">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/7.jpg" alt="Sweater Ligero">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/8.jpg" alt="Sweater Ligero">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/9.jpg" alt="Jeans Azul Corto al Tobillo">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/10.jpg" alt="Jeans Azul Corto al Tobillo">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/11.jpg" alt="Vestido Salmon Seda">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/12.jpg" alt="Vestido Salmon Seda">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/14.jpg" alt="Pollera Rosa Corta">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/15.jpg" alt="Pollera Rosa Corta">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/16.jpg" alt="Vestido Amarillo Corto">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/17.jpg" alt="Vestido Amarillo Corto">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/18.jpg" alt="Vestido Amarillo Floreado Largo">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/19.jpg" alt="Vestido Amarillo Floreado Largo">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/20.jpg" alt="Pantalon y Blazer Rosa Pastel">
+                    </li>
+                    <li class="glide__slide">
+                        <img src="assets/imgs/collections/slider/21.jpg" alt="Pantalon y Blazer Rosa Pastel">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fas fa-arrow-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-colecciones-2">
+        <img class="colecciones-img" src="assets/imgs/collections/vicky-cheng-4mLKBKMPoHo-unsplash.jpg"
+            alt="Coleccion Verano Primaver Vestido Negro">
+        <div class="collecion-about">
+            <h1 class="collecion-about-title">Sobre la </h1>
+            <h1 class="collecion-about-title">coleccion</h1>
+            <p class="collecion-about-desc">Esta temporada, la colección primavera verano 20 explora la idea de ser uno
+                mismo, lejos de las reglas
+                que se nos
+                imponen y evoluciona en torno a dos ejes principales: un deseo de tranquilidad pero también un deseo de
+                celebrar la
+                vida. La paleta de colores es fresca con una combinación de nuevos tonos neutros y cálidos tonos al
+                atardecer de color
+                beige, marrón dorado, rico palisandro y rosa canela en contraste con toques eléctricos de magenta,
+                amarillo cálido y
+                azul claro</p>
+        </div>
+    </section>
+
+    <section class="section-colecciones-3">
+        <div class="full-collection">
+            <h1 class="full-collection-title">Coleccion Completa</h1>
+        </div>
+        <div class="full-collection-wrapper">
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/2.jpg" alt="Pollera Negra Flecos">
+                <div class="item-desc">
+                    <h3>Pollera Negra Flecos</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Pollera Negra Flecos</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Black</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $510</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/3.jpg" alt="Vestido Rojo Largo">
+                <div class="item-desc">
+                    <h3>Vestido Rojo Largo</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Vestido Rojo Largo</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Rojo</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $1000</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/5.jpg" alt="Sweater Ligero">
+                <div class="item-desc">
+                    <h3>Sweater Ligero</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Sweater Ligero</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Multi-Color</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $400</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/7.jpg" alt="Jeans Azul Corto al Tobillo">
+                <div class="item-desc">
+                    <h3>Jeans Azul Corto al Tobillo</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Jeans Azul Corto al Tobillo</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Azul</p>
+                    <p>Ajuste: Fit</p>
+                    <p>Precio: $250</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/9.jpg" alt="Vestido Salmon Seda">
+                <div class="item-desc">
+                    <h3>Vestido Salmon Seda</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Vestido Salmon Seda</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Salmon</p>
+                    <p>Ajuste: Fit</p>
+                    <p>Precio: $850</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/11.jpg" alt="Saco Gris">
+                <div class="item-desc">
+                    <h3>Saco Gris</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Saco Gris</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Gris</p>
+                    <p>Ajuste: Fit</p>
+                    <p>Precio: $1300</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/15.jpg" alt="Saco Beige">
+                <div class="item-desc">
+                    <h3>Saco Beige</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Saco Beige</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Beige</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $280</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/16.jpg" alt="Vestido Corto Ligero Cuadrille">
+                <div class="item-desc">
+                    <h3>Vestido Corto Ligero Cuadrille</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Vestido Corto Ligero Cuadrille</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Gris</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $900</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/18.jpg" alt="Pantalon Rojo Pastel">
+                <div class="item-desc">
+                    <h3>Pantalon Rojo Pastel</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Pantalon Rojo Pastel</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Ajuste: Standard</p>
+                    <p>Precio: $1900</p>
+                </div>
+            </div>
+            <div class="full-collection-item">
+                <img src="/assets/imgs/collections/full_collection/20.jpg" alt="Vestido Blanco Corto">
+                <div class="item-desc">
+                    <h3>Vestido Blanco Corto</h3>
+                </div>
+                <div class="hover-desc">
+                    <h5>Vestido Blanco Corto</h5>
+                    <p>Talla: S/M/L</p>
+                    <p>Color: Blanco</p>
+                    <p>Ajuste: Fit</p>
+                    <p>Precio: $1260</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section class="section-5">
         <div class="insta-social">
@@ -69,8 +298,8 @@
                 </div>
                 <div class="right-info">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="colecciones.html">Colecciones</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Colecciones</a></li>
                         <li><a href="nosotros.html">Nosotros</a></li>
                         <li><a href="locales.html">Locales</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
@@ -81,13 +310,20 @@
         </footer>
     </section>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/JS/glide.min.js"></script>
     <script src="app.js"></script>
+    <script>
+        new Glide(".images", {
+            type: 'carousel',
+            perView: 2,
+            focusAt: 1,
+            gap: 0,
+        }).mount();
+    </script>
 </body>
 
 </html>
