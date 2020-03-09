@@ -278,16 +278,16 @@ document.addEventListener("DOMContentLoaded", () => {
         .addTo(controller);
 
     const tl9 = new TimelineMax();
-    tl9.fromTo(".full-collection-title", 1, {
+    tl9.fromTo(".full-collection-title", 1.8, {
         y: 50
     }, {
         y: 0
     })
-        .fromTo(".full-collection-wrapper", 1, {
+        .fromTo(".full-collection-wrapper", 1.8, {
             y: 50
         }, {
             y: 0
-        }, "-=.5")
+        }, "-=1")
 
     let scene8 = new ScrollMagic.Scene({
         triggerElement: ".section-colecciones-3",

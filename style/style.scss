@@ -284,7 +284,7 @@ section{
 }
 
 .section-3{
-    width: 100;
+    width: 100vw;
     height: 170vh;
 
     .section-3-wrapper{
@@ -331,20 +331,20 @@ section{
         }
 
         .section-3-galery{
-            height: 100vh;;
+            height: 100vh;
+            width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             position: relative;
             top: 5rem;
-            padding: 0 5%;
             a{
                 height: 35rem;
-                width: 15rem;
+                width: 14rem;
                 transition: all .2s ease-in;
 
                 img{
-                    height: 90%;
+                    width: 20rem;
                     object-fit: cover;
                     position: relative;
                 }
@@ -582,7 +582,7 @@ section{
     justify-content: space-around;
 
     img{
-        width: 45%;
+        width: 33%;
         object-fit: cover;
         height: 95%;
     }
@@ -691,12 +691,12 @@ section{
                 }
             }
 
-            &:hover{
-                filter: brightness(.8);
-            }
-
             &:hover .hover-desc{
                 opacity: 1;
+            }
+
+            &:hover img{
+                opacity: .2;
             }
         }
     }
