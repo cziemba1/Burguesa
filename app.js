@@ -1,3 +1,25 @@
+let hamMenu = document.querySelector(".toggle-btn");
+let nav = document.querySelector("#nav");
+
+hamMenu.addEventListener("click", () => {
+    nav.classList.toggle("nav-close");
+})
+
+
+jQuery(document).ready(function () {
+    let header = jQuery("nav");
+
+    jQuery.scrollDetection({
+        scrollDown: function () {
+            header.addClass("hide");
+        },
+        scrollUp: function () {
+            header.removeClass("hide");
+        },
+    })
+}
+)
+
 document.addEventListener("DOMContentLoaded", () => {
 
 
@@ -133,6 +155,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 opacity: 1,
                 ease: Power2.easeInOut
             }, "-=1.2")
+        .fromTo(".hero-locales", 1.5,
+            {
+                height: "0%"
+            },
+            {
+                height: "100%",
+                ease: Power2.easeInOut
+            }, "-=3.5")
+        .fromTo(".locales-main", 1.5,
+            {
+                x: 100,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                ease: Power2.easeInOut
+            }, "-=2")
 
     const controller = new ScrollMagic.Controller();
 
@@ -344,6 +384,25 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "100"
     })
         .setTween(tl11)
+        .addIndicators()
+        .addTo(controller);
+
+    const tl12 = new TimelineMax();
+    tl12.fromTo(".main-locales", 1.5, {
+        y: 200,
+        opacity: 0
+    }, {
+        y: 0,
+        opacity: 1
+    })
+
+    let scene11 = new ScrollMagic.Scene({
+        triggerElement: ".locales-info",
+        triggerHook: 1,
+        duration: "100%",
+        offset: "300"
+    })
+        .setTween(tl12)
         .addIndicators()
         .addTo(controller);
 
