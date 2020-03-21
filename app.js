@@ -197,9 +197,9 @@ document.addEventListener("DOMContentLoaded", () => {
         triggerElement: ".photo-vertical",
         duration: "100%",
         triggerHook: 1,
+        tweenChanges: true,
     })
         .setTween(tl2)
-        .addIndicators()
         .addTo(controller);
 
 
@@ -217,7 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "-100"
     })
         .setTween(tl3)
-        .addIndicators()
         .addTo(controller);
 
 
@@ -234,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "-100"
     })
         .setTween(tl4)
-        .addIndicators()
         .addTo(controller);
 
 
@@ -251,7 +249,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "-100"
     })
         .setTween(tl5)
-        .addIndicators()
         .addTo(controller);
 
     const tl6 = new TimelineMax();
@@ -272,7 +269,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "100"
     })
         .setTween(tl6)
-        .addIndicators()
         .addTo(controller);
 
     const tl7 = new TimelineMax();
@@ -288,7 +284,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "100"
     })
         .setTween(tl7)
-        .addIndicators()
         .addTo(controller);
 
     const tl8 = new TimelineMax();
@@ -314,7 +309,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "-100"
     })
         .setTween(tl8)
-        .addIndicators()
         .addTo(controller);
 
     const tl9 = new TimelineMax();
@@ -334,7 +328,6 @@ document.addEventListener("DOMContentLoaded", () => {
         triggerHook: 1,
     })
         .setTween(tl9)
-        .addIndicators()
         .addTo(controller);
 
     const tl10 = new TimelineMax();
@@ -359,7 +352,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "10"
     })
         .setTween(tl10)
-        .addIndicators()
         .addTo(controller);
 
     const tl11 = new TimelineMax();
@@ -384,7 +376,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "100"
     })
         .setTween(tl11)
-        .addIndicators()
         .addTo(controller);
 
     const tl12 = new TimelineMax();
@@ -403,7 +394,6 @@ document.addEventListener("DOMContentLoaded", () => {
         offset: "300"
     })
         .setTween(tl12)
-        .addIndicators()
         .addTo(controller);
 
 
